@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 5a7f1b0daaaec314a8c48ba115893b2a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pin_cushion_01
+    100004: pin_cushion_01.001
+    100006: pin_cushion_01.002
+    100008: pin_cushion_01.003
+    100010: pin_cushion_01.004
+    100012: pin_cushion_01.005
+    100014: pin_cushion_01.006
+    100016: pin_cushion_01.007
+    100018: pin_cushion_01.008
+    100020: pin_cushion_01.009
+    100022: pin_cushion_01.010
+    100024: pin_cushion_01.011
+    100026: pin_cushion_01.012
+    100028: pin_cushion_01.013
+    100030: pin_cushion_01.014
+    100032: pin_cushion_01.015
+    100034: pin_cushion_01.016
+    400000: //RootNode
+    400002: pin_cushion_01
+    400004: pin_cushion_01.001
+    400006: pin_cushion_01.002
+    400008: pin_cushion_01.003
+    400010: pin_cushion_01.004
+    400012: pin_cushion_01.005
+    400014: pin_cushion_01.006
+    400016: pin_cushion_01.007
+    400018: pin_cushion_01.008
+    400020: pin_cushion_01.009
+    400022: pin_cushion_01.010
+    400024: pin_cushion_01.011
+    400026: pin_cushion_01.012
+    400028: pin_cushion_01.013
+    400030: pin_cushion_01.014
+    400032: pin_cushion_01.015
+    400034: pin_cushion_01.016
+    2300000: pin_cushion_01
+    2300002: pin_cushion_01.001
+    2300004: pin_cushion_01.002
+    2300006: pin_cushion_01.003
+    2300008: pin_cushion_01.004
+    2300010: pin_cushion_01.005
+    2300012: pin_cushion_01.006
+    2300014: pin_cushion_01.007
+    2300016: pin_cushion_01.008
+    2300018: pin_cushion_01.009
+    2300020: pin_cushion_01.010
+    2300022: pin_cushion_01.011
+    2300024: pin_cushion_01.012
+    2300026: pin_cushion_01.013
+    2300028: pin_cushion_01.014
+    2300030: pin_cushion_01.015
+    2300032: pin_cushion_01.016
+    3300000: pin_cushion_01
+    3300002: pin_cushion_01.001
+    3300004: pin_cushion_01.002
+    3300006: pin_cushion_01.003
+    3300008: pin_cushion_01.004
+    3300010: pin_cushion_01.005
+    3300012: pin_cushion_01.006
+    3300014: pin_cushion_01.007
+    3300016: pin_cushion_01.008
+    3300018: pin_cushion_01.009
+    3300020: pin_cushion_01.010
+    3300022: pin_cushion_01.011
+    3300024: pin_cushion_01.012
+    3300026: pin_cushion_01.013
+    3300028: pin_cushion_01.014
+    3300030: pin_cushion_01.015
+    3300032: pin_cushion_01.016
+    4300000: pin_cushion_01
+    4300002: pin_cushion_01.001
+    4300004: pin_cushion_01.002
+    4300006: pin_cushion_01.003
+    4300008: pin_cushion_01.004
+    4300010: pin_cushion_01.005
+    4300012: pin_cushion_01.006
+    4300014: pin_cushion_01.007
+    4300016: pin_cushion_01.008
+    4300018: pin_cushion_01.009
+    4300020: pin_cushion_01.010
+    4300022: pin_cushion_01.011
+    4300024: pin_cushion_01.012
+    4300026: pin_cushion_01.013
+    4300028: pin_cushion_01.014
+    4300030: pin_cushion_01.015
+    4300032: pin_cushion_01.016
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pin_cushion_01
+    second: {fileID: 2100000, guid: af5fbd222001d6e4d853ca024d3cef41, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

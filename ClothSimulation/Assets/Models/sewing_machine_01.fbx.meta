@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 7e2f839e869bc5d43a3685f16dfeb7f5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: sewing_machine_01
+    100002: //RootNode
+    100004: sewing_machine_01.bobbin
+    100006: sewing_machine_01.bobbin cover
+    100008: sewing_machine_01.clamp
+    100010: sewing_machine_01.control 01
+    100012: sewing_machine_01.control 02
+    100014: sewing_machine_01.needle
+    100016: sewing_machine_01.switch
+    100018: sewing_machine_01.thread
+    400000: //RootNode
+    400002: sewing_machine_01
+    400004: sewing_machine_01.bobbin
+    400006: sewing_machine_01.bobbin cover
+    400008: sewing_machine_01.clamp
+    400010: sewing_machine_01.control 01
+    400012: sewing_machine_01.control 02
+    400014: sewing_machine_01.needle
+    400016: sewing_machine_01.switch
+    400018: sewing_machine_01.thread
+    2300000: sewing_machine_01
+    2300002: sewing_machine_01.bobbin
+    2300004: sewing_machine_01.bobbin cover
+    2300006: sewing_machine_01.clamp
+    2300008: sewing_machine_01.control 01
+    2300010: sewing_machine_01.control 02
+    2300012: sewing_machine_01.needle
+    2300014: sewing_machine_01.switch
+    2300016: sewing_machine_01.thread
+    3300000: sewing_machine_01
+    3300002: sewing_machine_01.bobbin
+    3300004: sewing_machine_01.bobbin cover
+    3300006: sewing_machine_01.clamp
+    3300008: sewing_machine_01.control 01
+    3300010: sewing_machine_01.control 02
+    3300012: sewing_machine_01.needle
+    3300014: sewing_machine_01.switch
+    3300016: sewing_machine_01.thread
+    4300000: sewing_machine_01
+    4300002: sewing_machine_01.clamp
+    4300004: sewing_machine_01.needle
+    4300006: sewing_machine_01.thread
+    4300008: sewing_machine_01.control 02
+    4300010: sewing_machine_01.control 01
+    4300012: sewing_machine_01.bobbin cover
+    4300014: sewing_machine_01.bobbin
+    4300016: sewing_machine_01.switch
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sewing_machine_01
+    second: {fileID: 2100000, guid: 98891cc62bed5d34b99309a94d64c715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sewing_machine_glass_01
+    second: {fileID: 2100000, guid: 086d8eb40e0a6b2489de8f913aff2c41, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
