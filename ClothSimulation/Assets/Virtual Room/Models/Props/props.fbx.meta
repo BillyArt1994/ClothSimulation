@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 12b94af7d6856fe44a23c604c0f12b32
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: abstract_figure
+    100002: box_1
+    100004: box_2
+    100006: heart_figure
+    100008: light
+    100010: light_glass
+    100012: //RootNode
+    100014: sphere_1
+    100016: sphere_2
+    100018: sphere_3
+    100020: vase_1
+    100022: vase_2
+    100024: vase_3
+    100026: vase_4
+    100028: vase_5
+    400000: abstract_figure
+    400002: box_1
+    400004: box_2
+    400006: heart_figure
+    400008: light
+    400010: light_glass
+    400012: //RootNode
+    400014: sphere_1
+    400016: sphere_2
+    400018: sphere_3
+    400020: vase_1
+    400022: vase_2
+    400024: vase_3
+    400026: vase_4
+    400028: vase_5
+    2300000: abstract_figure
+    2300002: box_1
+    2300004: box_2
+    2300006: heart_figure
+    2300008: light
+    2300010: light_glass
+    2300012: sphere_1
+    2300014: sphere_2
+    2300016: sphere_3
+    2300018: vase_1
+    2300020: vase_2
+    2300022: vase_3
+    2300024: vase_4
+    2300026: vase_5
+    3300000: abstract_figure
+    3300002: box_1
+    3300004: box_2
+    3300006: heart_figure
+    3300008: light
+    3300010: light_glass
+    3300012: sphere_1
+    3300014: sphere_2
+    3300016: sphere_3
+    3300018: vase_1
+    3300020: vase_2
+    3300022: vase_3
+    3300024: vase_4
+    3300026: vase_5
+    4300000: sphere_1
+    4300002: heart_figure
+    4300004: vase_5
+    4300006: box_1
+    4300008: vase_2
+    4300010: vase_1
+    4300012: vase_4
+    4300014: vase_3
+    4300016: box_2
+    4300018: light
+    4300020: light_glass
+    4300022: sphere_2
+    4300024: sphere_3
+    4300026: abstract_figure
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: a399626042bd0f643819a961890b61ae, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
