@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 9699388ffd0338544bca4a95dccbea9e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back_wall
+    100002: ceilling
+    100004: ceilling_emission
+    100006: floor
+    100008: front_wall
+    100010: handle
+    100012: light_blocker
+    100014: plinth
+    100016: //RootNode
+    100018: room
+    100020: white_wall
+    100022: window_living
+    100024: windowsill
+    400000: back_wall
+    400002: ceilling
+    400004: ceilling_emission
+    400006: floor
+    400008: front_wall
+    400010: handle
+    400012: light_blocker
+    400014: plinth
+    400016: room
+    400018: //RootNode
+    400020: white_wall
+    400022: window_living
+    400024: windowsill
+    2300000: back_wall
+    2300002: ceilling
+    2300004: ceilling_emission
+    2300006: floor
+    2300008: front_wall
+    2300010: handle
+    2300012: light_blocker
+    2300014: plinth
+    2300016: room
+    2300018: white_wall
+    2300020: window_living
+    2300022: windowsill
+    3300000: back_wall
+    3300002: ceilling
+    3300004: ceilling_emission
+    3300006: floor
+    3300008: front_wall
+    3300010: handle
+    3300012: light_blocker
+    3300014: plinth
+    3300016: room
+    3300018: white_wall
+    3300020: window_living
+    3300022: windowsill
+    4300000: room
+    4300002: floor
+    4300004: plinth
+    4300006: ceilling_emission
+    4300008: window_living
+    4300010: handle
+    4300012: ceilling
+    4300014: white_wall
+    4300016: light_blocker
+    4300018: back_wall
+    4300020: front_wall
+    4300022: windowsill
+    6400000: back_wall
+    6400002: ceilling
+    6400004: ceilling_emission
+    6400006: floor
+    6400008: front_wall
+    6400010: handle
+    6400012: light_blocker
+    6400014: plinth
+    6400016: room
+    6400018: white_wall
+    6400020: window_living
+    6400022: windowsill
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: ab2e9f58022e58242bd0d239800f7cd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 6e5d66c0d63c7cc4fa4d0ed9500fc83b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: uv
+    second: {fileID: 2100000, guid: 24d33309b30b10447b38cb0d5d65527a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
