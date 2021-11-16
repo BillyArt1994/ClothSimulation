@@ -266,35 +266,35 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="clipper_library">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween46">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenProEditor">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
-    </Reference>
     <Reference Include="DemiLib">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="DemiEditor">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="DOTweenPro">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenProEditor">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -691,6 +691,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
