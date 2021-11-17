@@ -6,6 +6,8 @@ using DG.Tweening;
 
 
 public delegate void UIClose();
+public delegate void OnTipsShow();
+public delegate void OnTipsClose();
 public enum UIStaet { 
     cxjd,
     kcjs,
@@ -26,8 +28,10 @@ public class MainUICtrl : MonoBehaviour
     }
 
 
-    public void ShowTips() {
+    public void ShowTips(OnTipsShow onTipsShow, OnTipsClose onTipsClose) {
+        TipsObj.transform.Find("CloseBtn").GetComponent<Button>().onClick.AddListener(()=>{ onTipsClose(); CloseTips(); });
         TipsObj.transform.DOScale(1, 0.5f);
+        onTipsShow();
     }
 
     public void CloseTips() {

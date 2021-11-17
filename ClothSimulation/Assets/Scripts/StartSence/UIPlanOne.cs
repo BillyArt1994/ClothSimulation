@@ -6,6 +6,15 @@ using DG.Tweening;
 
 public class UIPlanOne : MonoBehaviour
 {
+    private struct Clothse {
+        public Clothse(string tmpname, string tmpinfo) {
+            name = tmpname;
+            info = tmpinfo;
+        }
+        public string name;
+        public string info;
+    }
+
     public GameObject Ctrl;
     public GameObject TitileObj;
     public GameObject ConTextObj;
@@ -15,9 +24,22 @@ public class UIPlanOne : MonoBehaviour
     public GameObject GourpContent;
     public string ContextString;
 
+    public GameObject ClothShowTmp;
+    public GameObject ShowClothCtrl;
+
+
+    private Dictionary<string, Clothse> allClothse = new Dictionary<string, Clothse> {
+        {"ShenLanDuanXIu",new Clothse("深蓝提花短袖旗袍","深蓝提花短袖旗袍") },
+
+    };
+
     public void Start()
     {
-        LoadShowCloth();
+        foreach (KeyValuePair<string, Clothse> kvp in allClothse)
+        {
+            LoadShowCloth(kvp.Key, kvp.Value);
+        }
+       
     }
     public void ShowPlan(string titile) {
 
@@ -26,10 +48,6 @@ public class UIPlanOne : MonoBehaviour
         ConTextObj.transform.GetChild(0).GetComponent<Text>().text = ContextString;
         TitileObj.transform.DOLocalMoveX(-680, 2);
         ConTextObj.transform.DOLocalMoveX(0, 2);
-
-
-
-        
     }
 
     private void ClosePlan() 
@@ -63,13 +81,40 @@ public class UIPlanOne : MonoBehaviour
         YxmjfsConTextObj.transform.DOLocalMoveX(2800, 2);
     }
 
-    private void LoadShowCloth() {
+    private void LoadShowCloth(string clothesName,Clothse TmpClothes) {
+
         Object tmpobj = Resources.Load("ShowClothObj", typeof(GameObject));
         GameObject newShowClothObj = Instantiate(tmpobj) as GameObject;
-        newShowClothObj.transform.SetParent(GourpContent.transform);
-        newShowClothObj.transform.Find("NameText").GetComponent<Text>().text = "深蓝短袖夹旗袍";
-        newShowClothObj.transform.GetComponent<Button>().onClick.AddListener(Ctrl.transform.GetComponent<MainUICtrl>().ShowTips);
 
+        Object tmpSpriteobj = Resources.Load("clothes/" + clothesName, typeof(Sprite));
+        Sprite tmpSprite = Instantiate(tmpSpriteobj) as Sprite;
+        newShowClothObj.transform.Find("CoverImg").GetComponent<Image>().sprite = tmpSprite;
+        newShowClothObj.transform.SetParent(GourpContent.transform);
+        newShowClothObj.transform.Find("NameText").GetComponent<Text>().text = TmpClothes.name;
+      
+        newShowClothObj.transform.GetComponent<Button>().onClick.AddListener(()=> { Ctrl.transform.GetComponent<MainUICtrl>().ShowTips(()=> 
+        {
+            OnOpenTmpCloth(clothesName, TmpClothes);
+        },
+        ()=>{
+            OnCloseTmpCloth();
+        }); });
+
+    }
+
+    private void OnOpenTmpCloth(string clothesName, Clothse TmpClothes) {
+        ShowClothCtrl.transform.GetComponent<ShowObjsCtrl>().ShowTmpObj(clothesName);
+        ClothShowTmp.transform.SetParent(Ctrl.transform.GetComponent<MainUICtrl>().TipsObj.transform.Find("Content01"));
+        ClothShowTmp.transform.DOScale(1,0.5f);
+        ClothShowTmp.transform.Find("NameText").GetComponent<Text>().text = TmpClothes.name;
+        ClothShowTmp.transform.Find("ContentText").GetComponent<Text>().text = TmpClothes.info;
+    }
+
+
+    private void OnCloseTmpCloth() {
+        ClothShowTmp.transform.SetParent(transform);
+        ClothShowTmp.transform.DOScale(0, 0.5f);
+        ShowClothCtrl.transform.GetComponent<ShowObjsCtrl>().Close();
     }
 
     

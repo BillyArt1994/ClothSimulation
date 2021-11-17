@@ -65,8 +65,10 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Scripts\StartSence\MainUICtrl.cs" />
+    <Compile Include="Assets\Scripts\StartSence\ShowObjsCtrl.cs" />
     <Compile Include="Assets\Scripts\StartSence\StartPlanCtrl.cs" />
     <Compile Include="Assets\Scripts\StartSence\UIPlanOne.cs" />
+    <Compile Include="Assets\Scripts\StartSence\UIPlanThreeKSSJ.cs" />
     <Compile Include="Assets\Scripts\StartSence\UIPlanTwoKCJS.cs" />
     <Compile Include="Assets\Scripts\StepCtrl.cs" />
     <Compile Include="Assets\Scripts\StepFour_OnMianLiaoCaiJian.cs" />
@@ -664,6 +666,9 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
@@ -672,9 +677,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>H:/project/Unity_Project/2019/ClothSimulation/ClothSimulation/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
