@@ -18,6 +18,7 @@ public class MainUICtrl : MonoBehaviour
     public GameObject TopUI;
     public GameObject PlanOne;
     public GameObject PlanTwo;
+    public GameObject PlanThree;
     public GameObject TipsObj;
 
     private UIStaet uIStaet = UIStaet.cxjd;
@@ -59,7 +60,7 @@ public class MainUICtrl : MonoBehaviour
     {
         if (CheckChange(UIStaet.kssj))
         {
-
+            PlanThree.transform.GetComponent<UIPlanThreeKSSJ>().ShowPlan();
         }
     }
 

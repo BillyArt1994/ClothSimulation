@@ -29,7 +29,7 @@ public class UIPlanTwoKCJS : MonoBehaviour
 
     public string ContextString;
 
-
+    public GameObject ToolsTips;
 
     private Dictionary<string, Tool> AllTools = new Dictionary<string, Tool>() {
         {"huafen",new Tool("划粉","用于在面料上绘制旗袍裁片，方面裁剪。") },
@@ -62,6 +62,21 @@ public class UIPlanTwoKCJS : MonoBehaviour
         }
     }
 
+    private float Timer = 3f;
+    private void Update()
+    {
+        if (needCloseShowToolsInfo)
+        {
+            Timer -= Time.deltaTime;
+            if (Timer<=0)
+            {
+                ToolsTips.transform.DOLocalMoveY(-1000, 1);
+                needCloseShowToolsInfo = false;
+            }
+          
+        }
+    }
+
     private void LoadTools(string toolName,Tool tmpTool) {
         Object tmpobj = Resources.Load("Tools/tool", typeof(GameObject));
         GameObject newTool = Instantiate(tmpobj) as GameObject;
@@ -74,10 +89,20 @@ public class UIPlanTwoKCJS : MonoBehaviour
 
         newTool.transform.Find("toolName").GetComponent<Text>().text = tmpTool.Name;
         newTool.transform.Find("Toolimg").GetComponent<Image>().sprite = tmpSprite;
-        newTool.transform.Find("kuang").GetComponent<Button>().onClick.AddListener(()=> { Debug.Log(toolName); });
+        newTool.transform.Find("kuang").GetComponent<Button>().onClick.AddListener(()=> { ShowToolsInfo(tmpTool.Name, tmpTool.Info); });
         newTool.transform.SetParent(GJJSContent.transform);
     }
 
+    private bool needCloseShowToolsInfo = false;
+    private void  ShowToolsInfo(string name,string info) {
+        ToolsTips.transform.Find("NameText").GetComponent<Text>().text = name;
+        ToolsTips.transform.Find("InfoText").GetComponent<Text>().text = info;
+        ToolsTips.transform.DOLocalMoveY(-350, 1);
+        Timer = 3f;
+        needCloseShowToolsInfo = true;
+    }
+
+   
 
     // Start is called before the first frame update
     public void ShowPlan()
