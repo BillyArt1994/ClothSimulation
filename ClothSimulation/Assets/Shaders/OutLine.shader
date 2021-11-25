@@ -12,10 +12,11 @@
            
 
             Pass{
-                Tags { "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" }
-                ZWrite Off
-          //      offset 20 20
-            blend SrcAlpha OneMinusSrcAlpha
+                Tags {  "RenderType" = "Opaque"}
+           //     ZWrite Off
+             Cull front
+             Offset 0,1
+           // blend SrcAlpha OneMinusSrcAlpha
 
             CGPROGRAM
             #pragma vertex vert
