@@ -69,23 +69,7 @@ public class StepCtrl : MonoBehaviour
 
 
 
-    [System.Obsolete]
-    public void RegistToolsBtn(string ToolName, UnityEngine.Events.UnityAction ToolToDo) 
-    {
-        Object toolsObj = Resources.Load("ToolsBtn", typeof(GameObject));
-        GameObject newTools = Instantiate(toolsObj) as GameObject;
-        newTools.transform.SetParent(ToolsContent.transform);
-        newTools.transform.GetComponent<Button>().onClick.AddListener(ToolToDo);
-        newTools.transform.FindChild("Text").transform.GetComponent<Text>().text = ToolName;
-    }
-
-    public void ClearToolsContent() {
-        for (int i = 0; i < ToolsContent.transform.childCount; i++)
-        {
-            Destroy(ToolsContent.transform.GetChild(i).gameObject);
-        }
-    }
-
+   
 
 
     //当暂停时判断
@@ -94,9 +78,24 @@ public class StepCtrl : MonoBehaviour
         HaveUpDate= OnVoidDoDic.TryGetValue(steps, out TmpOnVoidDo);//是否需要update操作
         if (OnStartDoDic.TryGetValue(steps,out TmpStartDo))//是否需要初始化
         {
-            ClearToolsContent();
+            //ClearToolsContent();
             TmpStartDo();
         }
+    }
+
+    public void TimeLineStepChangePause() {
+        steps++;
+        string tmp = "error";
+        ContextInfoDIc.TryGetValue(steps, out tmp);
+        ContextInfo.text = tmp;
+        StepCtrlTimeline.GetComponent<PlayableDirector>().Pause();
+        HaveUpDate = OnVoidDoDic.TryGetValue(steps, out TmpOnVoidDo);//是否需要update操作
+        if (OnStartDoDic.TryGetValue(steps, out TmpStartDo))//是否需要初始化
+        {
+            //ClearToolsContent();
+            TmpStartDo();
+        }
+
     }
 
     public void TimeLineStepChangePlay()

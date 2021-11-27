@@ -15,7 +15,7 @@ public class StepFour_OnMianLiaoCaiJian : MonoBehaviour
     [System.Obsolete]
     private void StartDo()
     {
-        gameObject.transform.GetComponent<StepCtrl>().RegistToolsBtn("剪刀", SelectJianDao);
+       
     }
 
 

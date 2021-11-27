@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StepTwo_OnShowCloth : MonoBehaviour
+public class StepOne_OnShowCloth : MonoBehaviour
 {
     public GameObject Cloth;
     public float xSpeed = 250.0f;
@@ -11,7 +11,7 @@ public class StepTwo_OnShowCloth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.GetComponent<StepCtrl>().RegistVoidDo(Steps.two, UpdataDo);       
+        gameObject.transform.GetComponent<StepCtrl>().RegistVoidDo(Steps.one, UpdataDo);       
     }
 
     public void UpdataDo() {
