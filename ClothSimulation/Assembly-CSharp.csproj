@@ -78,6 +78,7 @@
     <None Include="Assets\Virtual Room\Shaders\StandardMetallicColorMask.shader" />
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Shaders\OutLine_Normal.shader" />
     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
     <None Include="Assets\Virtual Room\Readme.txt" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />

@@ -75,11 +75,16 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
         switch (selfState)
         {
             case State.mianliaoshangjiang:
-                shuazi.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0);
+
+               
+                shuazi.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0.01f);
                 break;
             case State.zhiyang:
+                
+                huafeng.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0.01f);
                 break;
             case State.mianliaocaijian:
+                jiandao.GetComponent<SkinnedMeshRenderer>().material.SetFloat("_Offset", 0.001f);
                 break;
             default:
                 break;
@@ -104,9 +109,9 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
                             case State.mianliaoshangjiang:
                                 if (hit.collider.transform.name == "刷子")
                                 {
-                              
-                                   
-                                    gameObject.transform.GetComponent<StepCtrl>().TimeLinePlay();
+
+                                shuazi.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0);
+                                gameObject.transform.GetComponent<StepCtrl>().TimeLinePlay();
                                     selfState++;
                                 IsPlay = false;
                                 }
@@ -114,8 +119,8 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
                             case State.zhiyang:
                                 if (hit.collider.transform.name == "huafen")
                                 {
-                                   
-                                    gameObject.transform.GetComponent<StepCtrl>().TimeLinePlay();
+                                huafeng.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0);
+                                gameObject.transform.GetComponent<StepCtrl>().TimeLinePlay();
                                        selfState++;
                                 zhiyang.transform.DOScale(0.002687774f, 1);
                                 IsPlay = false;
@@ -125,7 +130,7 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
                                 if (hit.collider.transform.name == "Scissors")
                                 {
 
-                              
+                                jiandao.GetComponent<SkinnedMeshRenderer>().material.SetFloat("_Offset", 0);
                                 gameObject.transform.GetComponent<StepCtrl>().TimeLinePlay();
                                     selfState++;
                                 IsPlay = false;
@@ -146,8 +151,6 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
    
     private void StartDo() {
         ChangeTipsAndHelp();
-        Debug.Log(shuazi.GetComponent<MeshRenderer>().material.GetFloat("_Offset"));
-        shuazi.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 1);
     }
 
 
