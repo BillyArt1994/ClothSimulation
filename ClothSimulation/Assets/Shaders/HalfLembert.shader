@@ -50,7 +50,9 @@
                 fixed NdotL =max(dot(i.worldNormal,worldLightDir),0.001);
                 fixed4 col = tex2D(_MainTex, i.uv);
                 col.rgb*=NdotL*0.5+0.5;
-                return col*_MainCol;
+                col *=_MainCol;
+                col.rgb = LinearToGammaSpace(col.rgb);
+                return col;
             }
             ENDCG
         }
