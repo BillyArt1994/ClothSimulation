@@ -19,6 +19,7 @@ public enum Steps {
 public delegate void OnVoidDo();
 public delegate void OnStartDo();
 public delegate void OnSelectTool();
+public delegate void OnPauseDo();
 public class StepCtrl : MonoBehaviour
 {
     public GameObject StepCtrlTimeline;
@@ -26,6 +27,8 @@ public class StepCtrl : MonoBehaviour
 
 
     public Text ContextInfo;
+    public Text helpText;
+    public Text TipsText;
     private Steps steps = Steps.zero;
     private Dictionary<Steps, string> ContextInfoDIc = new Dictionary<Steps, string> {
         { Steps.zero,"引言"},
@@ -38,15 +41,18 @@ public class StepCtrl : MonoBehaviour
 
     private Dictionary<Steps, OnVoidDo> OnVoidDoDic = new Dictionary<Steps, OnVoidDo>{ };
     private Dictionary<Steps, OnStartDo> OnStartDoDic = new Dictionary<Steps, OnStartDo> { };
+    private Dictionary<Steps, OnPauseDo> OnPauseDoDic = new Dictionary<Steps, OnPauseDo> { };
     private bool HaveUpDate=false;
     private OnVoidDo TmpOnVoidDo;
     private OnStartDo TmpStartDo;
+    private OnPauseDo TmpPauseDo;
     // Start is called before the first frame update
     void Start()
     {
         string tmp = "error";
         ContextInfoDIc.TryGetValue(steps, out tmp);
         ContextInfo.text = tmp;
+        SetHelpText("点击下一步继续学习。");
     }
 
     // Update is called once per frame
@@ -68,7 +74,19 @@ public class StepCtrl : MonoBehaviour
     }
 
 
+    public void RegistPauseDo(Steps tmpStep, OnPauseDo tmpOnPauseDo) {
+        OnPauseDoDic.Add(tmpStep, tmpOnPauseDo);
+    }
 
+
+    public void SetTipsText(string tipstext) {
+        TipsText.text = tipstext;
+     
+    }
+
+    public void SetHelpText(string helptext) {
+        helpText.text = helptext;
+    }
    
 
 
@@ -76,12 +94,13 @@ public class StepCtrl : MonoBehaviour
     public void TimeLinePause() {  
         StepCtrlTimeline.GetComponent<PlayableDirector>().Pause();
         HaveUpDate= OnVoidDoDic.TryGetValue(steps, out TmpOnVoidDo);//是否需要update操作
-        if (OnStartDoDic.TryGetValue(steps,out TmpStartDo))//是否需要初始化
+        if (OnPauseDoDic.TryGetValue(steps, out TmpPauseDo))//是否需要初始化
         {
             //ClearToolsContent();
-            TmpStartDo();
+            TmpPauseDo();
         }
     }
+
 
     public void TimeLineStepChangePause() {
         steps++;
@@ -92,8 +111,13 @@ public class StepCtrl : MonoBehaviour
         HaveUpDate = OnVoidDoDic.TryGetValue(steps, out TmpOnVoidDo);//是否需要update操作
         if (OnStartDoDic.TryGetValue(steps, out TmpStartDo))//是否需要初始化
         {
-            //ClearToolsContent();
+            Debug.Log(steps);
             TmpStartDo();
+        }
+        if (OnPauseDoDic.TryGetValue(steps, out TmpPauseDo))//是否需要初始化
+        {
+            //ClearToolsContent();
+            TmpPauseDo();
         }
 
     }
