@@ -1,4 +1,4 @@
-﻿Shader "Billy/OutLine"
+﻿Shader "Billy/OutLine_normal"
 {
     Properties
     {
