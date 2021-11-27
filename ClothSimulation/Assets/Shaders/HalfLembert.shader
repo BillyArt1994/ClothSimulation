@@ -49,6 +49,7 @@
                 fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
                 fixed NdotL =max(dot(i.worldNormal,worldLightDir),0.001);
                 fixed4 col = tex2D(_MainTex, i.uv);
+                col.rgb = GammaToLinearSpace(col.rgb);
                 col.rgb*=NdotL*0.5+0.5;
                 col *=_MainCol;
                 col.rgb = LinearToGammaSpace(col.rgb);
