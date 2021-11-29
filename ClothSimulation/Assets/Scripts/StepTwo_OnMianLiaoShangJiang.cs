@@ -151,6 +151,7 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
    
     private void StartDo() {
         ChangeTipsAndHelp();
+        gameObject.transform.GetComponent<StepCtrl>().ShowTips();
     }
 
 

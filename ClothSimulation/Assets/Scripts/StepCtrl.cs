@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
+using DG.Tweening;
 
 public enum Steps {
      zero,
@@ -136,5 +137,11 @@ public class StepCtrl : MonoBehaviour
         StepCtrlTimeline.GetComponent<PlayableDirector>().Play();
     }
 
+    public void ShowTips() {
+        ToolsContent.transform.DOLocalMoveX(725.34f, 1);
+    }
 
+    public void CloseTips() {
+        ToolsContent.transform.DOLocalMoveX(1500, 1);
+    }
 }

@@ -11,8 +11,10 @@ public class StepOne_OnShowCloth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         gameObject.transform.GetComponent<StepCtrl>().RegistVoidDo(Steps.one, UpdataDo);
-        gameObject.transform.GetComponent<StepCtrl>().SetHelpText("按住鼠标左键左右滑动预览完成后的服装效果。");
+        gameObject.transform.GetComponent<StepCtrl>().RegistStartDo(Steps.one, tmpStart);
+       
     }
 
     public void UpdataDo() {
@@ -22,5 +24,8 @@ public class StepOne_OnShowCloth : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(0, x, 0);
             Cloth.transform.rotation = rotation;
         }
+    }
+    private void tmpStart() {
+        gameObject.transform.GetComponent<StepCtrl>().SetHelpText("按住鼠标左键左右滑动预览完成后的服装效果。");
     }
 }
