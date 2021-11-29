@@ -75,12 +75,19 @@ public class StepTwo_OnMianLiaoShangJiang : MonoBehaviour
         switch (selfState)
         {
             case State.mianliaoshangjiang:
-
-               
                 shuazi.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0.01f);
+
                 break;
             case State.zhiyang:
-                
+                gameObject.transform.GetComponent<StepCtrl>().QusetionPlan.transform.GetComponent<QuestionPlanCtrl>().SetQusetion(new Qusetion(0,
+                    "测试题",
+                    "A",
+                    "B",
+                    "C",
+                    "D",
+                    1));
+                gameObject.transform.GetComponent<StepCtrl>().QusetionPlan.transform.GetComponent<QuestionPlanCtrl>().OnShowPlan();
+                gameObject.transform.GetComponent<StepCtrl>().TimeLinePause();
                 huafeng.GetComponent<MeshRenderer>().material.SetFloat("_Offset", 0.01f);
                 break;
             case State.mianliaocaijian:

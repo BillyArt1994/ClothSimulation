@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Scripts\QuestionPlanCtrl.cs" />
     <Compile Include="Assets\Scripts\StartSence\MainUICtrl.cs" />
     <Compile Include="Assets\Scripts\StartSence\ShowObjsCtrl.cs" />
     <Compile Include="Assets\Scripts\StartSence\StartPlanCtrl.cs" />

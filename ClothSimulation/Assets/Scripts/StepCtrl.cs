@@ -25,7 +25,7 @@ public class StepCtrl : MonoBehaviour
 {
     public GameObject StepCtrlTimeline;
     public GameObject ToolsContent;
-
+    public GameObject QusetionPlan;
 
     public Text ContextInfo;
     public Text helpText;

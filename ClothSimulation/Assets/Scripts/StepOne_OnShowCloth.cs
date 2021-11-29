@@ -21,7 +21,7 @@ public class StepOne_OnShowCloth : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
-            Quaternion rotation = Quaternion.Euler(0, x, 0);
+            Quaternion rotation = Quaternion.Euler(-89.464f, 0, x);
             Cloth.transform.rotation = rotation;
         }
     }

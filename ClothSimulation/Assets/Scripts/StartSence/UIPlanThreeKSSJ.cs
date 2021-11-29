@@ -23,6 +23,11 @@ public class UIPlanThreeKSSJ : MonoBehaviour
     public GameObject ThreeDCtrl;
     public GameObject Qipao;
 
+
+    public GameObject duan;
+    public GameObject zhong;
+    public GameObject chang;
+
     private Dictionary<string, DingZhi> KuanshiDingZhi = new Dictionary<string, DingZhi> {
         {"kuanshiA",new DingZhi("A型","kuanshi/A") },
         {"kuanshiH",new DingZhi("H型","kuanshi/H") },
@@ -44,10 +49,10 @@ public class UIPlanThreeKSSJ : MonoBehaviour
 
 
     private Dictionary<string, DingZhi> XiuZiDingZhi = new Dictionary<string, DingZhi> {
-        {"wu",new DingZhi("一字扣","xiuzi/wu") },
-        {"duan",new DingZhi("盘香扣","xiuzi/duan") },
-        {"zhong",new DingZhi("菊花扣","xiuzi/zhong") },
-        {"chang",new DingZhi("菊花扣","xiuzi/chang") },
+        {"wu",new DingZhi("无袖","xiuzi/wu") },
+        {"duan",new DingZhi("短袖","xiuzi/duan") },
+        {"zhong",new DingZhi("中袖","xiuzi/zhong") },
+        {"chang",new DingZhi("长袖","xiuzi/chang") },
     };
     public void ShowPlan()
     {
@@ -125,9 +130,36 @@ public class UIPlanThreeKSSJ : MonoBehaviour
 
         newTool.transform.Find("NameText").GetComponent<Text>().text = tmpdingzhi.Name;
         newTool.transform.Find("ShowImg").GetComponent<Image>().sprite = tmpSprite;
-        newTool.transform.Find("Btn").GetComponent<Button>().onClick.AddListener(() => { Debug.Log(tmpdingzhi.Name); });
+        newTool.transform.Find("Btn").GetComponent<Button>().onClick.AddListener(() => { OnBtnDown(tmpdingzhi.Name); });
         newTool.transform.SetParent(ViewContent.transform);
+    }
 
+    private void OnBtnDown(string tmpName) {
+        switch (tmpName)
+        {
+            case "无袖":
+                duan.SetActive(false);
+                zhong.SetActive(false);
+                chang.SetActive(false);
+                break;
+            case "短袖":
+                duan.SetActive(true);
+                zhong.SetActive(false);
+                chang.SetActive(false);
+                break;
+            case "中袖":
+                duan.SetActive(false);
+                zhong.SetActive(true);
+                chang.SetActive(false);
+                break;
+            case "长袖":
+                duan.SetActive(true);
+                zhong.SetActive(false);
+                chang.SetActive(true);
+                break;
 
+            default:
+                break;
+        }
     }
 }
