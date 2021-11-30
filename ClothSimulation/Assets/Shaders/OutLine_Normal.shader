@@ -2,7 +2,8 @@
 {
     Properties
     {
-        _Color("Color",COLOR) = (1.0,1.0,1.0,1.0)
+        _OutLineColor("OutLineColor",COLOR) = (1.0,1.0,1.0,1.0)
+        _MainCol ("MainCol",COLOR) = (1.0,1.0,1.0,1.0)
         _MainTex ("Texture", 2D) = "white" {}
         _Speed("Speed",FLoat) = 1
         _Offset("Offset",Float) = 1
@@ -30,27 +31,28 @@
             {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-                float3 normal :NORMAL;
+                float3 worldNormal :NORMAL;
             };
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            fixed4 _MainCol;
 
             v2f vert(appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-                o.normal = v.normal;
+                o.worldNormal = UnityObjectToWorldNormal( v.normal);
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
-                half NdotL = dot(i.normal, _WorldSpaceLightPos0);
-                return col;
+                fixed4 col = tex2D(_MainTex, i.uv)*_MainCol;
+                half NdotL = dot(i.worldNormal, _WorldSpaceLightPos0.rgb)*0.5+0.5;
+                return col*NdotL;
             }
             ENDCG
         }
@@ -68,7 +70,7 @@
 
                 #include "UnityCG.cginc"
                 float _Offset;
-                fixed4 _Color;
+                fixed4 _OutLineColor;
                 half _Speed;
 
             struct appdata
@@ -98,9 +100,9 @@
                 v2f vert(appdata v) {
                     v2f o;
                     float t = _Time.x;
-                    v.vertex.xyz += normalize(v.normal) * Remap(sin(t * _Speed),0,1, _Offset, _Offset + 0.001);
+                    v.vertex.xyz += v.normal* Remap(sin(t * _Speed),0,1, _Offset, _Offset + 0.001);
                     o.pos = UnityObjectToClipPos(v.vertex);
-                    o.color = _Color;
+                    o.color = _OutLineColor;
                     return o;
                 }
 
